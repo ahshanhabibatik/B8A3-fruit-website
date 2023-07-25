@@ -13,6 +13,8 @@
     <!-- use tailwind and daisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/ad79585135.js" crossorigin="anonymous"></script>
 
     <style>
         .lato {
@@ -24,7 +26,48 @@
 
 <body class="lato">
 
-    <header>
+    <header class="container mx-auto my-5">
+        <nav>
+            <div class="navbar bg-[#F85559] rounded-[600px] p-3">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>About us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+
+                        </ul>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                        <ul class="menu menu-horizontal text-xl px-1 text-white">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="lg:flex flex-row items-center gap-1 text-white  hidden">
+                    <img class="w-9" src="./images/logo.png" alt="">
+                    <a class="btn btn-ghost normal-case text-4xl font-bold">Justice</a>
+                </div>
+                <div class="navbar-end mr-7">
+                    <input type="text" class="py-2 px-3 w-60 rounded-[600px]" name="" id="" placeholder="Search here">
+                    <span class="ml-[-30px]"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+            </div>
+        </nav>
 
     </header>
 
