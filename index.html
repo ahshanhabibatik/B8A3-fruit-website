@@ -26,7 +26,7 @@
 
 <body class="lato">
 
-    <header class="container mx-auto my-5">
+    <header class=" md:container md:max-auto w-full my-5">
         <nav>
             <div class="navbar bg-[#F85559] rounded-[600px] p-3">
                 <div class="navbar-start">
@@ -68,6 +68,7 @@
                 </div>
             </div>
         </nav>
+
         <!-- banner/slider section -->
 
         <section>
@@ -75,7 +76,7 @@
                 <div id="slide1" class="carousel-item relative w-full">
                     <!-- slider-1 -->
                     <div id="slide1" class="carousel-item relative w-full">
-                        <div class="w-full mt-16 p-5 lg:p-0 bg-cover"
+                        <div class="min-w-full mt-16 px-20 lg:p-0 bg-cover"
                             style="background-image: url(./images/banner1.png)">
                             <div class=" p-4 lg:p-32">
                                 <div class=" space-y-3 text-center text-white">
@@ -208,11 +209,11 @@
         </section>
     </header>
 
-    <main class="container mx-auto my-5">
+    <main class="md:container md:max-auto w-auto my-5">
 
         <!-- Deal of the day -->
-        <section class="mt-9 p-4 md:p-3 lg:p-1 md:mt-28 lg:mt-60">
-            <div class="flex justify-between items-center flex-col md:flex-col lg:flex-row">
+        <section class="mt-9  md:p-3 lg:p-1 md:mt-28 lg:mt-60">
+            <div class="flex justify-evenly items-center flex-col md:flex-col lg:flex-row p-5">
                 <div class="">
                     <h1 class="text-3xl lg:text-5xl text-black font-extrabold text-center md:text-center lg:text-left ">
                         Deal of the
@@ -257,8 +258,8 @@
         </section>
 
         <!-- cards section -->
-        <section class="mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+        <section class="mt-24 w-auto">
+            <div class="flex  flex-col lg:flex-row  justify-center items-center gap-10   ">
                 <!-- card-1 -->
 
                 <div class="card bg-base-100 border border-indigo-50">
